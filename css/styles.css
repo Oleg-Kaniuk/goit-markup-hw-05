@@ -144,6 +144,15 @@ img {
   color: var(--primary-accent-color);
 }
 
+.menu-item.studio::after {
+  display: block;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--primary-accent-color);
+  border-radius: 2px;
+}
+
 /* =========================================================
 ====================    CONTACT LIST    ====================
 ========================================================= */
@@ -432,7 +441,9 @@ img {
   color: var(--primary-text-color);
 }
 
-/* FLEX */
+/* ======================================================================================================
+========================================    FLEX     ====================================================
+====================================================================================================== */
 
 .portfolio {
   padding-top: 96px;
@@ -496,6 +507,10 @@ img {
 .collection .section-subtitle {
   margin-bottom: 8px;
 }
+
+/* ======================================================================================================
+========================================    ICONS      ==================================================
+====================================================================================================== */
 
 .icons {
   display: flex;
@@ -609,4 +624,98 @@ img {
 
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+/* ======================================================================================================
+========================================    MODAL WINDOWS      ==========================================
+====================================================================================================== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 101;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  width: 408px;
+  height: 576px;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border-color: transparent;
+  background-color: var(--primary-accent-color);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--secondary-accent-color);
+}
+
+/* ======================================================================================================
+========================================    OVERLAY      ==========================================
+====================================================================================================== */
+.overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 100%);
+  transition: transform 5000ms linear;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  padding-left: 32px;
+  background: #4d5ae5;
+  mix-blend-mode: normal;
+}
+
+.collection-link:hover .overlay,
+.collection-link:focus .overlay {
+  transform: translate(0, 0);
 }
