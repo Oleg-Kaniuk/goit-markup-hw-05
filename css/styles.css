@@ -156,7 +156,6 @@ img {
 }
 
 .menu-link.active {
-  /* position: relative; */
   color: var(--primary-accent-color);
 }
 
