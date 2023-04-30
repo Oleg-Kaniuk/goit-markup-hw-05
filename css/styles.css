@@ -147,12 +147,12 @@ img {
   color: var(--primary-accent-color);
 }
 
-.menu-item.studio {
+.menu-link.active {
   position: relative;
   color: var(--primary-accent-color);
 }
 
-.menu-item.studio::after {
+.menu-link.active::after {
   position: absolute;
   display: block;
   content: "";
@@ -163,7 +163,6 @@ img {
   background-color: var(--primary-accent-color);
   border-radius: 2px;
 }
-
 /* =========================================================
 ====================    CONTACT LIST    ====================
 ========================================================= */
