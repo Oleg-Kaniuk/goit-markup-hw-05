@@ -147,15 +147,16 @@ img {
   color: var(--primary-accent-color);
 }
 
-.menu-item.active-portfolio {
+/* .menu-item.active-portfolio {
   position: relative;
-}
+} */
 
-.menu-item.active-studio {
-  position: relative;
-}
+/* .menu-item.active-studio {
+ 
+} */
 
 .menu-link.active {
+  position: relative;
   color: var(--primary-accent-color);
 }
 
