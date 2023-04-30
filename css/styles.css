@@ -147,8 +147,12 @@ img {
   color: var(--primary-accent-color);
 }
 
-.menu-link.active {
+.menu-item.active {
   position: relative;
+}
+
+.menu-link.active {
+  /* position: relative; */
   color: var(--primary-accent-color);
 }
 
@@ -707,8 +711,8 @@ img {
   height: 24px;
   border-radius: 50%;
   cursor: pointer;
-  transition: border var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
