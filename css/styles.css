@@ -147,7 +147,11 @@ img {
   color: var(--primary-accent-color);
 }
 
-.menu-item.active {
+.menu-item.active-portfolio {
+  position: relative;
+}
+
+.menu-item.active-studio {
   position: relative;
 }
 
