@@ -155,11 +155,11 @@ img {
   position: relative;
 }
 
-.menu-link.active {
+.active {
   color: var(--primary-accent-color);
 }
 
-.menu-link.active::after {
+.active::after {
   position: absolute;
   display: block;
   content: "";
